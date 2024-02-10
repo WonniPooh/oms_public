@@ -1,2 +1,1 @@
-# oms_public
-Binance Order Management Software
+# Binance Order Management Software
