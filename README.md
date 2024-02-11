@@ -1,6 +1,8 @@
 # Binance Trading Order Management Software
 
 Software for managing position. Has API so can be connected to any kind of custom software.
+> [!NOTE]
+> More advanced functionality in a private version.
 
 > [!IMPORTANT]
 > To make code work you need to manually replace in python-binance module:
