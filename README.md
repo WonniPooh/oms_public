@@ -65,6 +65,14 @@ Example API call for OCO order placed:
 
 -stop_type is a type of stop order, can be **STOP_LIMIT** or **STOP_MARKET**. For **STOP_MARKET** action_price param is not required
 
+Example API CANCEL order:
+> {"username": "Worker", "type":"CANCEL", "account_type":"FUTURES", "order_id":order_id, "should_liquidate":true }
+
+Example API call of manual price change for some exact order:
+> {"username": "Worker", "type":"PRICE ADJUST", "account_type":"FUTURES", "order_id":order_id, "price":new_price}
+
+Example API call for switch price source command:
+>{"username": "Worker", "type": "SWITCH PRICE SOURCE"}
 
 > [!CAUTION]
 > This project is for informational purposes only. You should not construe any such information or other material as legal, tax, investment, financial, or other advice. Nothing contained here constitutes a solicitation, >recommendation, endorsement, or offer by me or any third party service provider to buy or sell any securities or other financial instruments in this or in any other jurisdiction in which such solicitation or offer would be >unlawful under the securities laws of such jurisdiction.
