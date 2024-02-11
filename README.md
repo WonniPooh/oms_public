@@ -1,4 +1,4 @@
-# Binance Order Management Software
+# Binance Trading Order Management Software
 
 Software for managing position. Has API so can be connected to any kind of custom software.
 
