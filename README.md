@@ -4,9 +4,9 @@ Software for managing position. Has API so can be connected to any kind of custo
 
 > [!IMPORTANT]
 > To make code work you need to manually replace in python-binance module:
-> <br />self._loop: asyncio.AbstractEventLoop = get_loop()
+> <br />```self._loop: asyncio.AbstractEventLoop = get_loop()```
 > <br />to
-> <br />self._loop: asyncio.AbstractEventLoop = asyncio.new_event_loop() 
+> <br />```self._loop: asyncio.AbstractEventLoop = asyncio.new_event_loop() ```
 > <br />in file https://github.com/sammchardy/python-binance/blob/master/binance/threaded_stream.py
 
 
@@ -63,7 +63,7 @@ Example API call for StopLimit order placed:
 Example API call for OCO order placed:
 >{"username": "Alex", "type": "NEW ORDER", "order_id": "OeDh720mar", "account_type": "FUTURES", "order_type": "CUSTOM_OCO", "symbol": "ADAUSDT", "side": "SELL", "quote": 20.0, "stop_type": "STOP_LIMIT", "limit_price": "0.55", "trigger_price": "0.55", "leverage": "2", "is_repay": false, "action_price": "0.55"}
 
--stop_type is a type of stop order, can be **STOP_LIMIT** or **STOP_MARKET**. For **STOP_MARKET** action_price param is not required
+-stop_type is a type of stop order, can be **STOP_LIMIT** or **STOP_MARKET**. For **STOP_MARKET** "action_price" param is not required
 
 Example API CANCEL order:
 > {"username": "Worker", "type":"CANCEL", "account_type":"FUTURES", "order_id":order_id, "should_liquidate":true }
